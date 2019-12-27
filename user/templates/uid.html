@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>欢迎</title>
+    </head>
+    <body>
+        <ul>
+        {% for id in ids %}
+            <li style='color:{{ forloop.counter|divisibleby:"2"|yesno:"#F00, #00F" }};'>{{ id }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
